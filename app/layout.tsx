@@ -1,4 +1,3 @@
-import { Nunito } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -11,9 +10,6 @@ export const metadata: Metadata = {
   description: "An Airbnb Clone inspired by the Philippines",
 };
 
-const font = Nunito({
-  subsets: ["latin"],
-})
 
 export default function RootLayout({
   children,
@@ -22,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body>
         <ClientOnly>
-          <RegisterModal/>
+          <RegisterModal />
           <NavBar/>
         </ClientOnly>
         {children}
