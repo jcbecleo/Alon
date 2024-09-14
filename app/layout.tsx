@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "./components/navbar/NavBar";
 import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/modals/RegisterModal";
+import ToasterProvider from "./providers/ToasterProvider";
 
 export const metadata: Metadata = {
   title: "BahayKubo",
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ClientOnly>
+          <ToasterProvider />
           <RegisterModal />
           <NavBar/>
         </ClientOnly>
