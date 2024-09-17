@@ -11,11 +11,11 @@ const Search = () => {
             <div className="hidden sm:block text-sm font-semibold px-6 border-x-[1px] flex-1 flex-center">
                 Any Week
             </div>
-            <div className="text-sm pl-6 pr-2 text-gray-600 flex flex-row items-center gap-3">
+            <div className="text-sm pl-6 pr-2 text-[#17458f] flex flex-row items-center gap-3">
                 <div className="hidden sm:block">
                     Add Guests
                 </div>
-                <div className="p-2 bg-gray-500 text-white rounded-full">
+                <div className="p-2 bg-[#17458f] text-white rounded-full">
                     <BiSearch size={18} />
                 </div>
             </div>

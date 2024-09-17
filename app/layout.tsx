@@ -7,6 +7,7 @@ import RegisterModal from "./components/modals/RegisterModal";
 import ToasterProvider from "./providers/ToasterProvider";
 
 import { Rubik } from 'next/font/google';
+import LoginModal from "./components/modals/LoginModal";
 
 const rubik = Rubik({
   weight: ['300', '400'], // You can specify the weights you want (e.g., 400 for normal, 700 for bold)
@@ -30,6 +31,7 @@ export default function RootLayout({
         <ClientOnly>
           <ToasterProvider />
           <RegisterModal />
+          <LoginModal />
           <NavBar/>
         </ClientOnly>
         {children}
