@@ -75,24 +75,25 @@ const RegisterModal = () => {
         required/>
     </div>
   );
+  
 
   const footerContent = (
     <div className='flex flex-col gap-4 mt-3'>
       <hr />
       <Button 
-      outline 
-      label='Continue with Google'
-      icon={FcGoogle}
-      onClick={() => {}}
+        outline 
+        label='Continue with Google'
+        icon={FcGoogle}  // The size is handled inside the Button component
+        onClick={() => {}}
       />
-
+  
       <Button 
-      outline 
-      label='Continue with Github'
-      icon={AiFillGithub}
-      onClick={() => {}}
+        outline 
+        label='Continue with Github'
+        icon={AiFillGithub}  // The size is handled inside the Button component
+        onClick={() => {}}
       />
-
+  
       <div className='justify-center flex flex-row items-center gap-2'>
         <div>Already have an account?</div>
         <div>Log-in</div>
