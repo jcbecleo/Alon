@@ -85,7 +85,7 @@ const RegisterModal = () => {
         outline 
         label='Continue with Google'
         icon={FcGoogle}  // The size is handled inside the Button component
-        onClick={() => {}}
+        onClick={() => signIn('google')}
       />
   
       <Button 
