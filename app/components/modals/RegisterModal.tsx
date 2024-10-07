@@ -84,14 +84,14 @@ const RegisterModal = () => {
       <Button 
         outline 
         label='Continue with Google'
-        icon={FcGoogle}  // The size is handled inside the Button component
+        icon={FcGoogle}  
         onClick={() => signIn('google')}
       />
   
       <Button 
         outline 
         label='Continue with Github'
-        icon={AiFillGithub}  // The size is handled inside the Button component
+        icon={AiFillGithub} 
         onClick={() => signIn('github')}
       />
   
