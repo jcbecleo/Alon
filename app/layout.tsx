@@ -30,17 +30,12 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={rubik.className}>
-        {/* NavBar should not be in ClientOnly */}
-        <NavBar currentUser={currentUser} />
-
-        {/* Wrap only client-side dependent components */}
         <ClientOnly>
           <ToasterProvider />
           <RegisterModal />
           <LoginModal />
+          <NavBar currentUser={currentUser} />
         </ClientOnly>
-
-        {/* Render the rest of the page content */}
         {children}
       </body>
     </html>
