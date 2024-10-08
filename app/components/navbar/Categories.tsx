@@ -58,7 +58,7 @@ const Categories = () => {
                             label={item.label}
                             selected={category === item.label}
                             icon={item.icon}
-                            color="#17458f" // Pass the color prop here
+                            color="#17458f" 
                         />
                     ))}
                 </div>

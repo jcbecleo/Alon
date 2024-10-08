@@ -18,8 +18,10 @@ import { useRouter } from 'next/navigation';
 
 const LoginModal = () => {
   const router = useRouter();
+
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
+
   const [isLoading, setIsLoading] = useState(false);
 
   const {
@@ -53,6 +55,11 @@ const LoginModal = () => {
       }
     })
   };  
+
+  const toggle = useCallback(() => {
+    loginModal.onClose();
+    registerModal.onOpen();
+  }, [loginModal, registerModal]);
 
   const bodyContent = (
     <div className='flex flex-col gap-4'>
@@ -95,6 +102,10 @@ const LoginModal = () => {
         icon={AiFillGithub}  // The size is handled inside the Button component
         onClick={() => {}}
       />
+      <div className='flex flex-row items-center justify-center gap-2'>
+        <div>First time using Alon?</div>
+        <div className='text-neutral-500 cursor-pointer hover:underline' onClick={toggle}>Create an account</div>
+      </div>
     </div>
   )
 

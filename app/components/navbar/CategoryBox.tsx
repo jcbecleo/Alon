@@ -45,7 +45,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
         router.push(url);
     }, [label, params, router]);
     return (
-        <div onClick={handleClick} className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 hover:text-neutral-800 transition cursor-pointer ${selected ? 'border-b-[#17458f]' : 'border-transparent'} ${selected ? 'text-[#17458f]' : 'text-neutral-500'}`}>
+        <div onClick={handleClick} className={`flex flex-col items-center justify-center gap-0.5 p-2 border-b-2 hover:text-neutral-800 transition cursor-pointer ${selected ? 'border-b-[#17458f]' : 'border-transparent'} ${selected ? 'text-[#17458f]' : 'text-neutral-500'}`}>
             <Icon size={26} style={{ color: '#17458f' }} />
             <div className="font-medium text-sm" style={{ color: '#17458f' }}>
                 {label}
