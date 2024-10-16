@@ -9,10 +9,11 @@ import ToasterProvider from "./providers/ToasterProvider";
 import { Rubik } from 'next/font/google';
 import LoginModal from "./components/modals/LoginModal";
 import getCurrentUser from "./actions/getCurrentUser";
+import RentModal from "./components/modals/RentModal";
 
 const rubik = Rubik({
-  weight: ['300', '400'], // You can specify the weights you want (e.g., 400 for normal, 700 for bold)
-  subsets: ['latin'], // Choose subsets depending on the characters you need
+  weight: ['300', '400'],   
+  subsets: ['latin'], 
 });
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default async function RootLayout({
         <ClientOnly>
           <ToasterProvider />
           <RegisterModal />
+          <RentModal /> 
           <LoginModal />
           <NavBar currentUser={currentUser} />
         </ClientOnly>
